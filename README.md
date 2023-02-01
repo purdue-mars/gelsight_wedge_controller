@@ -10,5 +10,11 @@ ROS control interface with Dynamixel library to control the Gelsight Wedge Gripp
 3. Build + source
 4. Run `roslaunch gelsight_wedge_controller gripper.launch`
 5. In another tab,
-- Close: `rostopic pub /desired_joint_states sensor_msgs/JointState '{name: ['gripper_joint'], position: [2.2],velocity: [-0.5]}' --once`
-- Open: `rostopic pub /desired_joint_states sensor_msgs/JointState '{name: ['gripper_joint'], position: [0],velocity: [0.5]}' --once`
+- Close: 
+```
+rostopic pub /desired_joint_states sensor_msgs/JointState '{name: ['gripper_joint'], position: [2.2],velocity: [-0.5]}' --once
+```
+- Open: 
+```
+rostopic pub /desired_joint_states sensor_msgs/JointState '{name: ['gripper_joint'], position: [0],velocity: [0.5]}' --once
+```
